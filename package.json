@@ -1,0 +1,15 @@
+{
+  "name": "sophygiene",
+  "version": "1.0.0",
+  "description": "Société de dératisation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.2"
+  }
+}
