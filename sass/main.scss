@@ -1,4 +1,11 @@
-body {
-    background-color: blue;
-    margin: 0px;
-}
+// utils
+@import 'utils/variables';
+
+// base
+@import 'base/typography';
+
+// components
+@import 'components/navbar';
+
+// layout
+@import 'layout/title';

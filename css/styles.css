@@ -1,6 +1,33 @@
 body {
-  background-color: blue;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../images/background_title.jpeg");
+  background-position: center;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.headerTitle_logo {
+  width: 30%;
+  height: auto;
+}
+.headerTitle_text {
+  color: #c12026;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
