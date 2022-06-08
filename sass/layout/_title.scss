@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     height: 100vh;
     background-image: url('../../images/background_title.jpeg');
     background-position: center;
@@ -9,7 +10,6 @@ header {
 }
 
 .headerTitle {
-
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -25,4 +25,10 @@ header {
         color: $primary-color;
         text-align: center;
     }
+}
+
+.headerArrow {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
 }

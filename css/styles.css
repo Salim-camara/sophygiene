@@ -4,10 +4,52 @@ body {
   height: 2000px;
 }
 
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  background-color: #58585a;
+  font-size: 20px;
+}
+.navbar_leftSide {
+  display: flex;
+  color: white;
+}
+.navbar_leftSide_menu {
+  margin-left: 20px;
+}
+.navbar_middleSide {
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
+}
+.navbar_middleSide-logo {
+  height: 90%;
+}
+.navbar_rightSide {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  height: 80%;
+}
+.navbar_rightSide-logo {
+  height: 100%;
+}
+.navbar_rightSide-number {
+  margin: 0 20px 0 10px;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 100vh;
   background-image: url("../../images/background_title.jpeg");
   background-position: center;
@@ -28,6 +70,12 @@ header {
 .headerTitle_text {
   color: #c12026;
   text-align: center;
+}
+
+.headerArrow {
+  position: absolute;
+  bottom: 0;
+  height: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */
