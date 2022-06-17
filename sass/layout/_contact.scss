@@ -1,0 +1,47 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-linkContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-linkContainer-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-linkContainer-email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-linkContainer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.contact-icon {
+    &-fb {
+        height: 100px;
+        margin-right: 50px;
+    }
+
+    &-insta {
+        height: 130px;
+        margin-right: 50px;
+    }
+
+    &-ytb {
+        height: 150px;
+        padding: 0;
+    }
+}

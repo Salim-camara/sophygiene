@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 50px 60px 50px;
+
+    &-text {
+        font-size: 25px;
+    }
+
+    &-map {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
