@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     top: 0;
-    height: 50px;
+    height: 70px;
     width: 100%;
     z-index: 2;
     background-color: $secondary-color;
@@ -49,6 +49,36 @@
     }
 }
 
+.navbar_leftSide_menu {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: $primary-color;
+}
+
+// for navbar animation
 .navbar-hide {
     opacity: 0;
+}
+
+
+
+// mobile device
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        height: 90px;
+
+        &_middleSide {
+            height: 40%;
+            margin-right: 20px;
+        }
+
+        &_rightSide {
+            display: none;
+        }
+    }
+
+    .navbar_leftSide_menu-about {
+        display: none;
+    }
 }

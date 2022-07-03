@@ -1,7 +1,14 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../../font/PFBeauSansPro-Regular.woff");
+}
 body {
   margin: 0;
   padding: 0;
+  font-size: 25px;
   color: #58585a;
+  font-family: "myFirstFont";
+  text-align: center;
 }
 
 h2 {
@@ -12,10 +19,13 @@ h2 {
   margin-bottom: 60px;
   border-bottom: 5px solid #58585a;
   border-radius: 10px;
+  text-align: center;
 }
 
 li {
-  color: red;
+  color: #c12026;
+  text-align: start;
+  margin-top: 15px;
 }
 
 span {
@@ -26,13 +36,23 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}
 .navbar {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
-  height: 50px;
+  height: 70px;
   width: 100%;
   z-index: 2;
   background-color: #58585a;
@@ -69,10 +89,31 @@ html {
   margin: 0 20px 0 10px;
 }
 
+.navbar_leftSide_menu {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #c12026;
+}
+
 .navbar-hide {
   opacity: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 90px;
+  }
+  .navbar_middleSide {
+    height: 40%;
+    margin-right: 20px;
+  }
+  .navbar_rightSide {
+    display: none;
+  }
+  .navbar_leftSide_menu-about {
+    display: none;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -97,15 +138,31 @@ header {
 }
 .headerTitle_text {
   color: #c12026;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
   text-align: center;
 }
 
 .headerArrow {
   position: absolute;
   bottom: 0;
-  height: 10%;
+  left: 50%;
+  transform: translateX(-50px);
+  height: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .headerTitle_logo {
+    width: 80%;
+  }
+  .headerTitle_text {
+    width: 80%;
+  }
+  .headerArrow {
+    display: flex;
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -117,10 +174,17 @@ header {
   font-size: 25px;
 }
 .about-map {
+  display: flex;
   border-radius: 50%;
   overflow: hidden;
 }
 
+@media screen and (max-width: 600px) {
+  .about-map {
+    border-radius: 5px;
+    width: 100%;
+  }
+}
 .product {
   display: flex;
   flex-direction: column;
@@ -130,14 +194,12 @@ header {
   padding: 60px 50px 60px 50px;
   background-color: #f2f2f2;
 }
-.product-list {
-  color: green;
-}
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px 50px 60px 50px;
 }
 .contact-linkContainer {
   display: flex;
@@ -159,21 +221,61 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  margin-top: 25px;
 }
 
 .contact-icon-fb {
-  height: 100px;
-  margin-right: 50px;
+  height: 60px;
+  margin-right: 70px;
 }
 .contact-icon-insta {
-  height: 130px;
+  height: 70px;
   margin-right: 50px;
 }
 .contact-icon-ytb {
-  height: 150px;
+  height: 75px;
   padding: 0;
 }
 
+.contact-subTitle {
+  font-size: 25px;
+  margin: 0;
+}
+.contact-link {
+  font-size: 30px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-linkContainer-social {
+    justify-content: space-between;
+    width: 90%;
+  }
+  .contact-subTitle {
+    font-size: 23px;
+  }
+  .contact-link {
+    font-size: 23px;
+    text-align: center;
+  }
+  .contact-linkContainer-phone {
+    padding: 0 20px 0 20px;
+  }
+  .contact-linkContainer-title {
+    padding: 0 20px 0 20px;
+  }
+  .contact-icon-fb {
+    height: 50px;
+    margin: 0;
+  }
+  .contact-icon-insta {
+    height: 60px;
+    margin: 0;
+  }
+  .contact-icon-ytb {
+    height: 65px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -182,6 +284,8 @@ footer {
   height: 200px;
   background-color: #58585a;
   color: white;
+  font-size: 15px;
+  padding: 0 20px 0 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

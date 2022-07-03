@@ -23,6 +23,9 @@ header {
     }
     &_text {
         color: $primary-color;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
         text-align: center;
     }
 }
@@ -30,5 +33,26 @@ header {
 .headerArrow {
     position: absolute;
     bottom: 0;
-    height: 10%;
+    left: 50%;
+    transform: translateX(-50px);
+    height: 100px;
+}
+
+
+// mobile device 
+@media screen and (max-width: 600px) {
+
+    .headerTitle {
+        &_logo {
+            width: 80%;
+        }
+
+        &_text {
+            width: 80%;
+        }
+    }
+
+    .headerArrow {
+        display: flex;
+    }
 }

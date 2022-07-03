@@ -1,5 +1,5 @@
 const positionYElement = document.querySelector('.headerArrow');
-const  positionY = positionYElement.getBoundingClientRect();
+const positionY = positionYElement.getBoundingClientRect();
 
 window.addEventListener('scroll', () => {
 
@@ -7,7 +7,8 @@ window.addEventListener('scroll', () => {
 
     if(window.scrollY > positionY.top) {
         navbar.classList.remove('navbar-hide');
-    }else {
+    }else if (window.scrollY < positionY.top){
+        console.log('test');
         navbar.classList.add('navbar-hide');
     }
 });

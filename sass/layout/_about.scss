@@ -10,7 +10,20 @@
     }
 
     &-map {
+        display: flex;
         border-radius: 50%;
         overflow: hidden;
+    }
+}
+
+
+// mobile device
+@media screen and (max-width: 600px) {
+
+    .about {
+        &-map {
+            border-radius: 5px;
+            width: 100%;
+        }
     }
 }
