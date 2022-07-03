@@ -1,6 +1,6 @@
 @font-face {
   font-family: "myFirstFont";
-  src: url("../../font/PFBeauSansPro-Regular.woff");
+  src: url("../font/PFBeauSansPro-Regular.woff");
 }
 body {
   margin: 0;
@@ -41,7 +41,7 @@ a {
   color: inherit;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     font-size: 15px;
   }
@@ -99,7 +99,7 @@ a {
   opacity: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .navbar {
     height: 90px;
   }
@@ -120,7 +120,7 @@ header {
   align-items: center;
   position: relative;
   height: 100vh;
-  background-image: url("../../images/background_title.jpeg");
+  background-image: url("../images/background_title.jpeg");
   background-position: center;
 }
 
@@ -146,13 +146,13 @@ header {
 
 .headerArrow {
   position: absolute;
-  bottom: 0;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50px);
   height: 100px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .headerTitle_logo {
     width: 80%;
   }
@@ -161,6 +161,7 @@ header {
   }
   .headerArrow {
     display: flex;
+    bottom: 25px;
   }
 }
 .about {
@@ -179,7 +180,7 @@ header {
   overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .about-map {
     border-radius: 5px;
     width: 100%;
@@ -246,7 +247,7 @@ header {
   margin-bottom: 120px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .contact-linkContainer-social {
     justify-content: space-between;
     width: 90%;
