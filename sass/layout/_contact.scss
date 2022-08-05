@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 60px 50px 60px 50px;
+    background-color: lighten($secondary-color, 60%);
 
     &-linkContainer {
         display: flex;

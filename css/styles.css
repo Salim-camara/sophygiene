@@ -196,11 +196,40 @@ header {
   background-color: #f2f2f2;
 }
 
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 50px 60px 50px;
+}
+.partner-imgContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.img-partner {
+  width: 15%;
+  height: auto;
+  padding: 10px;
+  margin: 15px;
+  background-color: #58585a;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  .img-partner {
+    min-width: 200px;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 50px 60px 50px;
+  background-color: #f2f2f2;
 }
 .contact-linkContainer {
   display: flex;
